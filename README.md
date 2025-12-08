@@ -1,5 +1,8 @@
 # AngularTestStandalone
 
+I created this project to experiment with writing unit tests for standalone Angular components.
+---
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
 
 ## Development server
