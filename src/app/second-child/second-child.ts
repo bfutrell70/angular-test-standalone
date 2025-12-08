@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { Person } from '../interfaces/person';
 
 @Component({
@@ -9,5 +9,9 @@ import { Person } from '../interfaces/person';
   standalone: true
 })
 export class SecondChild {
-  @Input() Person: Person | undefined;
+  person = signal<Person | undefined>(undefined);
+
+  @Input() set Person(person: Person) {
+    this.person.set(person);
+  }
 }
