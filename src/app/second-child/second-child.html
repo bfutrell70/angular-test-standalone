@@ -1,2 +1,4 @@
 <br>
-<span>Number of films: {{Person?.films?.length}}</span>
+@if (person() != undefined) {
+  <span>Number of films: {{person()?.films?.length}}</span>
+}
