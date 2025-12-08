@@ -1,6 +1,6 @@
 <p>test-component works!</p>
 <hr />
-@if (people().length > 0)
+@if (people() != undefined && people().length > 0)
 {
   <div class="container">
       @for (person of people(); track person.name) {
