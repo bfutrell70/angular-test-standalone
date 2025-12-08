@@ -7,6 +7,7 @@ import { SecondChild } from '../second-child/second-child';
   imports: [SecondChild],
   templateUrl: './first-child.html',
   styleUrl: './first-child.css',
+  standalone: true
 })
 export class FirstChild {
   @Input() Person: Person | undefined;
