@@ -4,7 +4,6 @@
 {
   <div class="container">
       @for (person of people(); track person.name) {
-        <!-- <div class="alert alert-primary text-center">{{person.name}}</div> -->
         <app-first-child [Person]="person"></app-first-child>
       }
   </div>
