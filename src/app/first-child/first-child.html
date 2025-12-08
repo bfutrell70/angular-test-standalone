@@ -1,0 +1,6 @@
+@if (Person != undefined) {
+  <div class="alert alert-success text-center">
+    {{Person.name}}
+    <app-second-child [Person]="Person" />
+  </div>
+}
