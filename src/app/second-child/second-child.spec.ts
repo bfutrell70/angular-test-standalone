@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SecondChild } from './second-child';
 import { Person } from '../interfaces/person';
-import { By } from '@angular/platform-browser';
 
 describe('SecondChild', () => {
   let component: SecondChild;
